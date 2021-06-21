@@ -1,7 +1,7 @@
 # Loki Rubber Ducky Firmware Generator for ATtiny85
 Class: Dropper/ Downloader
 
-ITALIAN VERSION : www.sgneep.cpm/adrenaline/loki-it.html
+ITALIAN VERSION : www.sgneep.com/adrenaline/loki-it.html
 
 ENGLISH VERSION : W.I.P
 
