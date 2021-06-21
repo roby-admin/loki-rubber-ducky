@@ -1,0 +1,2 @@
+REM Use Http protocol.
+call wget.exe --delete-after http://info.cern.ch/ -O %tmp%\wgetDownloadTest.txt >nul

