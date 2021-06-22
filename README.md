@@ -7,6 +7,7 @@ ENGLISH VERSION : W.I.P
 
 # LOKI PAYLOAD SNIPPET:
 download all payload snippets file : *.lzo or *.ps1 file
+
 !! test the snippet in your code!! 
 
 <p align="center">
