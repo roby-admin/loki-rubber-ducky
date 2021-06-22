@@ -5,7 +5,7 @@ ITALIAN VERSION : www.sgneep.com/adrenaline/loki-it.html
 
 ENGLISH VERSION : W.I.P
 
-# LOKI PAYLOAD SNIPPET:
+# LOKI PAYLOAD SNIPPET FOR MICROSOFT WINDOWS:
 download all payload snippets file : *.lzo or *.ps1 file
 
 !! use the snippets and modify them according to your needs !!
