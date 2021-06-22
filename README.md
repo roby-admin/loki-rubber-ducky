@@ -8,7 +8,7 @@ ENGLISH VERSION : W.I.P
 # LOKI PAYLOAD SNIPPET:
 download all payload snippets file : *.lzo or *.ps1 file
 
-!! test the snippet in your code!!
+!! use the snippets and modify them according to your needs !!
 
 !! use Loki to program your massive cyber training test while keeping a low cost per usb key. !!
 
