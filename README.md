@@ -6,8 +6,8 @@ ITALIAN VERSION : www.sgneep.com/adrenaline/loki-it.html
 ENGLISH VERSION : W.I.P
 
 # LOKI PAYLOAD EXAMPLE:
-payload file : *.lzo
-copy this payload in your server.
+download all payload snippets file : *.lzo or *.ps1 file
+!! use the snippet !! 
 
 <p align="center">
 
