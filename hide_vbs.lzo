@@ -24,6 +24,8 @@ REM FINALLY::
 start %vbsname% %TMP%\%scriptName%
 exit
 )
+REM #####################################################################
+
 REM IF EXIST::
 del %vbsname%
 
