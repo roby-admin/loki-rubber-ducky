@@ -10,6 +10,8 @@ download all payload snippets file : *.lzo or *.ps1 file
 
 !! test the snippet in your code!!
 
+!! use Loki to program your massive cyber training test while keeping a low cost per usb key. !!
+
 # FIRMWARE GENERATOR FOR TINY85 MCU:
 
 <p align="center">
