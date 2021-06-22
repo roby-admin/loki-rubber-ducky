@@ -2,7 +2,7 @@ REM Language : LOKI PowerShell and Command Line Test
 REM ---------------------------------------------------------------------------------------
 REM SEND POST DATA TO SERVER
 REM ---------------------------------------------------------------------------------------
-REM AUTOGENERATE POWERSHELL CODE - ANTIREMOVE FROM ANTIVIRUS
+REM AUTOGENERATE POWERSHELL CODE - ANTIREMOVE
 REM OUTPUT PS1 FILE: temp\STS.ps1 , rename it....
 REM FROM AV EVASION ADD RANDOM PROGRAM LINE
 REM USEFUL FOR DATA EXFILTRATION TEST
