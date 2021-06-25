@@ -1,6 +1,11 @@
 
 :: Written by Roberto Mazzoni
+:: teste on Win10
+
 :: https://www.aescrypt.com/download/v3/windows/AESCrypt_console_v310_win32.zip
+
+:: auto-download with powershell
+powershell -C "(New-Object System.Net.WebClient).DownloadFile(\"https://www.yourServer.com\aescrypt.xxx\", \".\aescrypt.exe\")"
 
 mode con:cols=50 lines=2
 set pass=your_password
