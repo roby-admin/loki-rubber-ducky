@@ -1,1 +1,0 @@
- WMIC /Node:localhost /Namespace:^\^\root^\Microsoft^\Windows^\Defender Path MSFT_MpPreference Get ^* /format:list ^| findstr /i "DisableRealtimeMonitoring ExclusionPath ExclusionProcess MAPSReporting SubmitSamplesConsent"
