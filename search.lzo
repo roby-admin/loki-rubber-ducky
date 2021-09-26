@@ -1,5 +1,0 @@
-FOR /R "%homedrive%\" %%X in (*.doc) DO (
-echo %%X >> %homedrive%\Original.txt SafeMode
-
-
-)
